@@ -4,8 +4,8 @@ import connectDb from "./db/db.js";
 dotenv.config({ path: "./env" });
 
 
-
 connectDb()
+
 .then(() => {
   app.on("Error", (Error) => {
     console.log(`Error: ${Error} `);
@@ -18,3 +18,5 @@ connectDb()
 .catch((err) => {
   console.log(`mongo db connection faiiiil ${err}`);
 });
+
+
